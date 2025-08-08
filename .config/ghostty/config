@@ -11,4 +11,6 @@ macos-titlebar-style = hidden
 window-padding-balance = true
 window-padding-x = 8
 window-padding-y = 8
+window-width = 111
+window-height = 34
 # theme = dark:GruvboxDarkHard,light:GruvboxLightHard

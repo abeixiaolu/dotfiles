@@ -22,6 +22,7 @@ esac
 # pnpm end
 
 # alias
+alias cd="z"
 alias d="nr dev"
 alias d="nr dev"
 alias dd="nr docs:dev"
