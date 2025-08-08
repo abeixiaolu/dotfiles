@@ -1,0 +1,7 @@
+[user]
+	name = abei
+	email = abeixiaolu@gmail.com
+[core]
+	ignorecase = false
+[includeIf "gitdir:/Users/abei/Documents/workspace/"]
+	path = /Users/abei/Documents/workspace/.gitconfig
