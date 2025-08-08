@@ -38,7 +38,8 @@ alias gps="git push"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gst="git status"
-alias ls="eza --long --all --time-style=long-iso --no-user"
+alias ls="eza --long --all --time-style=long-iso --no-user --git-ignore"
+alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
 
 export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
 
