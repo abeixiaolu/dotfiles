@@ -1,7 +1,6 @@
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
-
 # history setup
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
@@ -39,12 +38,16 @@ alias gps="git push"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gst="git status"
+alias gs="git switch"
+alias gstash="git stash"
+alias gpop="git stash pop"
+alias gsd="git switch develop"
+alias gsr="git switch release"
+alias gsm="git switch master"
 alias ls="eza --long --all --time-style=long-iso --no-user --git-ignore"
 alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
 
 export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
-
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
 
 # bun completions
 [ -s "/Users/abei/.bun/_bun" ] && source "/Users/abei/.bun/_bun"
