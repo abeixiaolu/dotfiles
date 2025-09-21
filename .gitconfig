@@ -3,5 +3,6 @@
 	email = abeixiaolu@gmail.com
 [core]
 	ignorecase = false
+	excludesfile = /Users/abei/.gitignore_global
 [includeIf "gitdir:/Users/abei/Documents/workspace/"]
 	path = /Users/abei/Documents/workspace/.gitconfig
