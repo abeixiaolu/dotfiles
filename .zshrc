@@ -51,7 +51,7 @@ alias gsm="git switch master"
 alias ls="eza --long --all --time-style=long-iso --no-user --git-ignore"
 alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
 # 快速创建 hotfix/时间分支
-alias git-hotfix='git checkout -b hotfix/$(date +%Y%m%d-%H%M%S)'
+alias hotfix='git checkout -b hotfix/$(date +%Y%m%d-%H%M%S)'
 
 export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
 
