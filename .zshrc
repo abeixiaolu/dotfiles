@@ -8,6 +8,10 @@ HISTSIZE=999
 setopt share_history
 setopt hist_expire_dups_first
 
+# 启用自动补全系统
+autoload -Uz compinit
+compinit
+
 # autosuggestions and syntax highlighting
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -46,6 +50,8 @@ alias gsr="git switch release"
 alias gsm="git switch master"
 alias ls="eza --long --all --time-style=long-iso --no-user --git-ignore"
 alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
+# 快速创建 hotfix/时间分支
+alias git-hotfix='git checkout -b hotfix/$(date +%Y%m%d-%H%M%S)'
 
 export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
 
