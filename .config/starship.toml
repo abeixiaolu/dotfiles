@@ -7,10 +7,6 @@ $dotnet\
 $python\
 $java\
 $c\
-$cmd_duration\
-$shell\
-$time\
-$username\
 $character\
 """
 
