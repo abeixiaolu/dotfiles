@@ -1,5 +1,4 @@
 format = """
-[╭](fg:current_line)\
 $os\
 $directory\
 $git_branch\
@@ -12,7 +11,6 @@ $cmd_duration\
 $shell\
 $time\
 $username\
-$line_break\
 $character\
 """
 
@@ -35,7 +33,7 @@ red = '#D88385'
 yellow = '#c8b37a'
 
 [os]
-format = '(fg:current_line)[](fg:red)[$symbol ](fg:primary bg:red)[](fg:red)'
+format = '[](fg:green)[$symbol ](fg:primary bg:green)(fg:green)'
 disabled = false
 
 [os.symbols]
@@ -51,7 +49,7 @@ FreeBSD = ''
 Garuda = ''
 Gentoo = ''
 Linux = ''
-Macos = '󰀶'
+Macos = ''
 Manjaro = ''
 Mariner = ''
 Mint = ''
@@ -73,7 +71,7 @@ Unknown = ''
 Windows = ''
 
 [directory]
-format = '(fg:current_line)[](fg:pink)[󰷏 ](fg:primary bg:pink)[](fg:pink bg:box)[ $read_only$truncation_symbol$path](fg:foreground bg:box)[](fg:box)'
+format = '[█](fg:box)[$read_only$truncation_symbol$path](fg:foreground bg:box)[█](fg:box)'
 home_symbol = " ~/"
 truncation_symbol = ' '
 truncation_length = 2
@@ -81,39 +79,29 @@ read_only = '󱧵 '
 read_only_style = ''
 
 [git_branch]
-format = '(fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $branch](fg:foreground bg:box)[](fg:box)'
-symbol = ' '
+format = '[$symbol$branch ](fg:foreground bg:box)'
+symbol = ' '
 
 [nodejs]
-format = '(fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
-symbol = '󰎙 Node.js'
+format = '[$symbol$version](fg:foreground bg:box)[█](fg:box)'
+symbol = ' '
 
 [dotnet]
-format = '(fg:current_line)[](fg:purple)[$symbol](fg:primary bg:purple)[](fg:purple bg:box)[ $tfm](fg:foreground bg:box)[](fg:box)'
+format = '(fg:box)[$symbol](fg:primary)[ $tfm](fg:foreground)'
 symbol = ' .NET'
 
 [python]
-format = '(fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '(fg:box)[$symbol](fg:primary)[ $version](fg:foreground)'
 symbol = ' python'
 
 [java]
-format = '(fg:current_line)[](fg:red)[$symbol](fg:primary bg:red)[](fg:red bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '(fg:box)[$symbol](fg:primary)[ $version](fg:foreground)'
 symbol = ' Java'
 
 [c]
-format = '(fg:current_line)[](fg:blue)[$symbol](fg:primary bg:blue)[](fg:blue bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '(fg:box)[$symbol](fg:primary)[ $version](fg:foreground)'
 symbol = ' C'
 
-[fill]
-symbol = '─'
-style = 'fg:current_line'
-
-[cmd_duration]
-min_time = 500
-format = '(fg:current_line)[](fg:orange)[ ](fg:primary bg:orange)[](fg:orange bg:box)[ $duration ](fg:foreground bg:box)[](fg:box)'
-
 [character]
-format = """
-[╰─$symbol](fg:current_line) """
-success_symbol = '[λ](fg:bold white)'
-error_symbol = '[×](fg:bold red)'
+success_symbol = '[█](fg:green)[󱚤 ](fg:bold primary bg:green)[](fg:green)'
+error_symbol = '[█](fg:red)[󱚠 ](fg:bold primary bg:red)[](fg:red)'
