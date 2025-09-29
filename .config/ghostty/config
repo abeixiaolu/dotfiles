@@ -1,6 +1,6 @@
 shell-integration-features = no-cursor
 cursor-style = block
-font-family = "JetBrainsMono Nerd Font Propo"
+font-family = "BitstromWera Nerd Font Propo"
 font-feature = +ss01,+cv18
 font-size = 14
 background-opacity = 0.9
