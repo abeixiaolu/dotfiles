@@ -62,3 +62,26 @@ export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 alias codex='codex -m gpt-5-codex -c model_reasoning_effort=high -c model_reasoning_summary_format=experimental --search --dangerously-bypass-approvals-and-sandbox'
+
+# 安装 tmux 插件管理器和插件
+tmux-install() {
+  # 检查 TPM 是否已安装
+  if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+    echo "🔧 正在安装 TPM..."
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  else
+    echo "✅ TPM 已存在"
+  fi
+
+  # 检查 tmux 是否已安装
+  if ! command -v tmux >/dev/null 2>&1; then
+    echo "❌ 未检测到 tmux，请先安装 tmux"
+    return 1
+  fi
+
+  echo "🚀 正在安装 tmux 插件..."
+  tmux new -d -s setup "sleep 1; ~/.tmux/plugins/tpm/bin/install_plugins; tmux kill-session -t setup" >/dev/null 2>&1
+
+  echo "✨ 插件安装完成！"
+  echo "提示：打开 tmux 后可用 prefix + U 更新插件。"
+}
