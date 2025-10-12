@@ -50,6 +50,8 @@ alias gsr="git switch release"
 alias gsm="git switch master"
 alias ls="eza --long --all --time-style=long-iso --no-user --git-ignore"
 alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
+alias codex='codex -m gpt-5-codex -c model_reasoning_effort=high -c model_reasoning_summary_format=experimental --search --dangerously-bypass-approvals-and-sandbox'
+alias claude='claude --dangerously-skip-permissions'
 # 快速创建 hotfix/时间分支
 alias hotfix='git checkout -b hotfix/$(date +%Y%m%d-%H%M%S)'
 
@@ -61,7 +63,6 @@ export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-alias codex='codex -m gpt-5-codex -c model_reasoning_effort=high -c model_reasoning_summary_format=experimental --search --dangerously-bypass-approvals-and-sandbox'
 
 # 安装 tmux 插件管理器和插件
 tmux-install() {
