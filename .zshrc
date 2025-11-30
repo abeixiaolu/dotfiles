@@ -87,3 +87,6 @@ tmux-install() {
   echo "✨ 插件安装完成！"
   echo "提示：打开 tmux 后可用 prefix + U 更新插件。"
 }
+
+# Added by Antigravity
+export PATH="/Users/abei/.antigravity/antigravity/bin:$PATH"

@@ -1,6 +1,7 @@
 shell-integration-features = no-cursor
 cursor-style = block
 font-family = "BerkeleyMono Nerd Font"
+font-family = "LXGW ZhenKai GB"
 font-feature = +ss01,+cv18
 font-size = 14
 background-opacity = 0.9
@@ -14,3 +15,4 @@ window-padding-y = 8,0
 window-width = 111
 window-height = 34
 theme = Neutral Theme
+keybind = shift+enter=text:\x1b\r
