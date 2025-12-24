@@ -48,8 +48,7 @@ alias gpop="git stash pop"
 alias gsd="git switch daily"
 alias gsr="git switch release"
 alias gsm="git switch master"
-alias ls="eza --long --all --grid --time-style=long-iso --no-user --git-ignore"
-alias lss="eza --all --icons=always"
+alias ls="eza --all -l --color=always --time-style=long-iso --no-user -h --icons=always --group-directories-first"
 alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
 alias codex='codex -m gpt-5-codex -c model_reasoning_effort=high -c model_reasoning_summary_format=experimental --search --dangerously-bypass-approvals-and-sandbox'
 alias claude='claude --dangerously-skip-permissions'
@@ -90,3 +89,9 @@ tmux-install() {
 
 # Added by Antigravity
 export PATH="/Users/abei/.antigravity/antigravity/bin:$PATH"
+export PATH=/Users/abei/.local/bin:$PATH
+export FACTORY_API_KEY=fk-xSuF20nrtkykhfSCpZiI-9C5_qf2j_uOL7rHvRbSQTfF8oMhx9mxV5W0uUcJD_wg
+
+# Added by Antigravity
+export PATH="/Users/abei/.antigravity/antigravity/bin:$PATH"
+export CRS_OAI_KEY=cr_051c56613d968f9677b02c2c452111bc88504f5e37ee2f0ac556e2200f1bc34e

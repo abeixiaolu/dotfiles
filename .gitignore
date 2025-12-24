@@ -2,3 +2,4 @@ raycast
 .vscode
 mole
 *.bak
+.config/yarn

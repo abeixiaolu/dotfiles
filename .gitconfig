@@ -6,3 +6,8 @@
 	excludesfile = /Users/abei/.gitignore_global
 [includeIf "gitdir:/Users/abei/Documents/workspace/"]
 	path = /Users/abei/Documents/workspace/.gitconfig
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
