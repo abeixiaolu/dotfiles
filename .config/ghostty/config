@@ -1,7 +1,7 @@
 shell-integration-features = no-cursor
 cursor-style = block
 font-family = "BerkeleyMono Nerd Font"
-font-family = "LXGW ZhenKai GB"
+font-family = "寒蝉活宋体_復"
 font-feature = +ss01,+cv18
 font-size = 15.5
 background-opacity = 0.9
