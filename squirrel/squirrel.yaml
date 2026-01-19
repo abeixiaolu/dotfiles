@@ -73,7 +73,7 @@ style:
 
   # adjust the base line of text
   #base_offset: 0
-  font_face: "Avenir"
+  # font_face: "Avenir"
   font_point: 16
   #label_font_face: 'Avenir'
   #label_font_point: 12
@@ -93,7 +93,8 @@ preset_color_schemes:
     candidate_text_color: 0x3c3c3c # 预选项文字颜色
     horizontal: true # 水平排列
     inline_preedit: true # 单行显示，false双行显示
-    font_face: "寒蝉活宋体_復" # 候选词编号字体
+    font_face: "ChillHuoSong_F_Regular" # 候选词编号字体
+    label_font_face: "ChillHuoSong_F_Regular" # 候选词编号字体
     font_point: 16 # 候选文字大小
     label_font_point: 13 # 候选编号大小
     corner_radius: 5 # 候选条圆角
@@ -110,7 +111,8 @@ preset_color_schemes:
     candidate_text_color: 0xdddddd # 预选项文字颜色
     horizontal: true # 水平排列
     inline_preedit: true # 单行显示，false双行显示
-    font_face: "寒蝉活宋体_復" # 候选词编号字体
+    label_font_face: "ChillHuoSong_F_Regular" # 候选词编号字体
+    font_face: "ChillHuoSong_F_Regular" # 候选文字字体
     font_point: 16 # 候选文字大小
     label_font_point: 13 # 候选编号大小
     corner_radius: 5 # 候选条圆角
