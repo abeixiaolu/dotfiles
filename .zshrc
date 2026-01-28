@@ -54,6 +54,7 @@ alias codex='codex -m gpt-5-codex -c model_reasoning_effort=high -c model_reason
 alias claude='claude --dangerously-skip-permissions'
 # 快速创建 hotfix/时间分支
 alias hotfix='git checkout -b hotfix/$(date +%Y%m%d-%H%M%S)'
+alias cat='bat'
 
 export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
 
