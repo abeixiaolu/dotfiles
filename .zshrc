@@ -56,18 +56,13 @@ alias claude='claude --dangerously-skip-permissions'
 alias hotfix='git checkout -b hotfix/$(date +%Y%m%d-%H%M%S)'
 alias cat='bat'
 
-export GOOGLE_CLOUD_PROJECT=still-summit-464705-b6
-
 # bun completions
 [ -s "/Users/abei/.bun/_bun" ] && source "/Users/abei/.bun/_bun"
-
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# 安装 tmux 插件管理器和插件
 tmux-install() {
-  # 检查 TPM 是否已安装
   if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
     echo "🔧 正在安装 TPM..."
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -87,12 +82,3 @@ tmux-install() {
   echo "✨ 插件安装完成！"
   echo "提示：打开 tmux 后可用 prefix + U 更新插件。"
 }
-
-# Added by Antigravity
-export PATH="/Users/abei/.antigravity/antigravity/bin:$PATH"
-export PATH=/Users/abei/.local/bin:$PATH
-export FACTORY_API_KEY=fk-xSuF20nrtkykhfSCpZiI-9C5_qf2j_uOL7rHvRbSQTfF8oMhx9mxV5W0uUcJD_wg
-
-# Added by Antigravity
-export PATH="/Users/abei/.antigravity/antigravity/bin:$PATH"
-export CRS_OAI_KEY=undefined
