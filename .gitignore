@@ -2,4 +2,6 @@ raycast
 .vscode
 mole
 *.bak
-.config/yarn
+.config
+!.config/ghostty
+!.config/starship.toml
