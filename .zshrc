@@ -50,7 +50,7 @@ alias gsr="git switch release"
 alias gsm="git switch master"
 alias ls="eza --all -l --color=always --time-style=long-iso --no-user -h --icons=always --group-directories-first"
 alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
-alias codex='codex -m gpt-5-codex -c model_reasoning_effort=high -c model_reasoning_summary_format=experimental --search --dangerously-bypass-approvals-and-sandbox'
+alias codex='codex --dangerously-bypass-approvals-and-sandbox'
 alias claude='claude --dangerously-skip-permissions'
 # 快速创建 hotfix/时间分支
 alias hotfix='git checkout -b hotfix/$(date +%Y%m%d-%H%M%S)'
@@ -95,4 +95,4 @@ export FACTORY_API_KEY=fk-xSuF20nrtkykhfSCpZiI-9C5_qf2j_uOL7rHvRbSQTfF8oMhx9mxV5
 
 # Added by Antigravity
 export PATH="/Users/abei/.antigravity/antigravity/bin:$PATH"
-export CRS_OAI_KEY=cr_051c56613d968f9677b02c2c452111bc88504f5e37ee2f0ac556e2200f1bc34e
+export CRS_OAI_KEY=undefined

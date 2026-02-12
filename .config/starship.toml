@@ -83,19 +83,19 @@ format = '[$symbol$version](fg:foreground bg:box)[█](fg:box)'
 symbol = ' '
 
 [dotnet]
-format = '(fg:box)[$symbol](fg:primary)[ $tfm](fg:foreground)'
+format = '[$symbol$version](fg:foreground bg:box)[█](fg:box)'
 symbol = ' .NET'
 
 [python]
-format = '(fg:box)[$symbol](fg:primary)[ $version](fg:foreground)'
+format = '[$symbol$version](fg:foreground bg:box)[█](fg:box)'
 symbol = ' python'
 
 [java]
-format = '(fg:box)[$symbol](fg:primary)[ $version](fg:foreground)'
+format = '[$symbol$version](fg:foreground bg:box)[█](fg:box)'
 symbol = ' Java'
 
 [c]
-format = '(fg:box)[$symbol](fg:primary)[ $version](fg:foreground)'
+format = '[$symbol$version](fg:foreground bg:box)[█](fg:box)'
 symbol = ' C'
 
 [character]
