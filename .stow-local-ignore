@@ -23,3 +23,6 @@ _darcs
 ^/COPYING
 docs
 ^squirrel$
+mac-settings.sh
+ssh-key-quick.sh
+Brewfile
