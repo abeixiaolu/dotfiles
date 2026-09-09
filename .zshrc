@@ -48,6 +48,8 @@ alias gpop="git stash pop"
 alias gsd="git switch daily"
 alias gsr="git switch release"
 alias gsm="git switch master"
+# 当前分支合并到 daily 并推送
+alias m2d="$HOME/dotfiles/merge-to-daily.sh"
 alias ls="eza --all -l --color=always --time-style=long-iso --no-user -h --icons=always --group-directories-first"
 alias lst="eza --long --all --time-style=long-iso --no-user --git-ignore -T"
 alias codex='codex --dangerously-bypass-approvals-and-sandbox'
@@ -94,3 +96,5 @@ if [ -n "$OTTY_SHELL_INTEGRATION" ] && [ -r "$OTTY_SHELL_INTEGRATION/otty-integr
   . "$OTTY_SHELL_INTEGRATION/otty-integration.zsh"
 fi
 # <<< otty shell integration <<<
+
+export PATH="$HOME/.local/bin:$PATH"
